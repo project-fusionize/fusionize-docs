@@ -1,0 +1,18 @@
+<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="250" fill="#242526"/>
+  
+  <!-- Context Box -->
+  <rect x="50" y="50" width="500" height="150" rx="8" fill="#2c2e30" stroke="#5d6d7e" stroke-width="2"/>
+  <text x="300" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#e5e5e5">Workflow Context</text>
+  
+  <!-- Context Content -->
+  <text x="70" y="85" font-family="monospace" font-size="13" fill="#e5e5e5">{</text>
+  <text x="90" y="110" font-family="monospace" font-size="13" fill="#e5e5e5">"requestId": "REQ-12345",</text>
+  <text x="90" y="130" font-family="monospace" font-size="13" fill="#e5e5e5">"customerName": "Acme Corp",</text>
+  <text x="90" y="150" font-family="monospace" font-size="13" fill="#e5e5e5">"aiAnalysisResult": "APPROVED",</text>
+  <text x="90" y="170" font-family="monospace" font-size="13" fill="#e5e5e5">"confidence": 0.95</text>
+  <text x="70" y="190" font-family="monospace" font-size="13" fill="#e5e5e5">}</text>
+  
+  <!-- Arrows showing data flow -->
+  <text x="300" y="225" text-anchor="middle" font-size="12" fill="#b0b0b0" font-style="italic">Data flows and accumulates as nodes execute</text>
+</svg>

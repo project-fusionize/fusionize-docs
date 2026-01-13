@@ -1,0 +1,48 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="300" fill="#242526"/>
+  
+  <!-- START Node -->
+  <circle cx="80" cy="150" r="35" fill="#50c878" stroke="#70e898" stroke-width="2"/>
+  <text x="80" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold">START</text>
+  
+  <!-- TASK Node 1 -->
+  <rect x="170" y="120" width="100" height="60" rx="6" fill="#3498db" stroke="#5dade2" stroke-width="2"/>
+  <text x="220" y="145" text-anchor="middle" fill="white" font-size="12" font-weight="bold">AI Analysis</text>
+  <text x="220" y="162" text-anchor="middle" fill="white" font-size="10">TASK</text>
+  
+  <!-- DECISION Node -->
+  <path d="M 350 150 L 400 110 L 450 150 L 400 190 Z" fill="#f39c12" stroke="#f5b041" stroke-width="2"/>
+  <text x="400" y="155" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Approved?</text>
+  
+  <!-- TASK Node 2a -->
+  <rect x="500" y="60" width="100" height="60" rx="6" fill="#9b59b6" stroke="#b674d1" stroke-width="2"/>
+  <text x="550" y="85" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Execute</text>
+  <text x="550" y="102" text-anchor="middle" fill="white" font-size="10">TASK</text>
+  
+  <!-- TASK Node 2b -->
+  <rect x="500" y="170" width="100" height="60" rx="6" fill="#e67e22" stroke="#ff944d" stroke-width="2"/>
+  <text x="550" y="195" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Review</text>
+  <text x="550" y="212" text-anchor="middle" fill="white" font-size="10">TASK</text>
+  
+  <!-- END Node -->
+  <circle cx="650" cy="150" r="35" fill="#e74c3c" stroke="#e97163" stroke-width="2"/>
+  <text x="650" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold">END</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e5e5e5" />
+    </marker>
+  </defs>
+  
+  <line x1="115" y1="150" x2="170" y2="150" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="270" y1="150" x2="350" y2="150" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="130" x2="500" y2="90" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="170" x2="500" y2="200" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="90" x2="630" y2="125" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="200" x2="630" y2="165" stroke="#e5e5e5" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Labels -->
+  <text x="465" y="75" font-size="11" fill="#2ecc71" font-weight="bold">Yes</text>
+  <text x="465" y="215" font-size="11" fill="#e74c3c" font-weight="bold">No</text>
+</svg>
